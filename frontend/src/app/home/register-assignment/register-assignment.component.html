@@ -1,0 +1,40 @@
+<div class="bgComponent">
+    <div class="form">
+        <mat-card class="card">
+            <mat-card-title>Register an Assignment </mat-card-title>
+            <mat-card-content>
+                <div class="container">
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.name" matInput placeholder="Name" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.area" matInput placeholder="Area of teaching" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.students" matInput placeholder="Maximum Quantity of Students" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.teacher" matInput placeholder="Teacher" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.classroom" matInput placeholder="Classroom" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.date" matInput placeholder="Day of the week" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]=" registerData.time " type="time" matInput placeholder="Hour " required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]=" registerData.hour" type="number" matInput placeholder="Duration on minutes" required min="60" max="180" step="30" />
+                    </mat-form-field>
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button class="button colorButton " mat-raised-button>
+          Register
+        </button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

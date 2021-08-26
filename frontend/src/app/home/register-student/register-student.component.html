@@ -1,0 +1,46 @@
+<div class="bgComponent">
+    <div class="form">
+        <mat-card class="card">
+            <mat-card-title>Register a Student </mat-card-title>
+            <mat-card-content>
+                <div class="container">
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.name" matInput placeholder="Name and Lastname" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.email" type="email" matInput placeholder="Email" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.password" type="password" matInput placeholder="Password" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.phone" matInput placeholder="Phone" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.adress" matInput placeholder="Adress" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.age" matInput placeholder="Age" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.fname" matInput placeholder="Father Name and Lastname" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.fphone" matInput placeholder="Father's Phone" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.mname" matInput placeholder="Mother's Name and Lastname" required />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input [(ngModel)]="registerData.mphone" matInput placeholder="Mother's Phone" required />
+                    </mat-form-field>
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button class="button colorButton" mat-raised-button>
+          Register
+        </button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
